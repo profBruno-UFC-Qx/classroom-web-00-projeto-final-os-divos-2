@@ -1,36 +1,65 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/IDEzcQ6G)
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=23519976)
 # :checkered_flag: NOME DO PROJETO
-
-Breve descrição do que o seu projeto faz.
+Recicla UFC: 
+Plataforma web responsiva projetada como um ecossistema digital integrado para a otimização da gestão de resíduos sólidos e fomento da sustentabilidade no campus.
 
 ## :technologist: Membros da equipe
-
-Matrícula, nome e curso dos participantes.
+Fábio Rodrigues Borges Filho - 552274 - EC
+Ruanne Sousa Oliveira - 558314 - RC
 
 ## :bulb: Objetivo Geral
-Descrever o objetivo de geral do projeto
+Aplicação WEB com foco em extensão universitária para melhorar a gestao de resíduos sólidos no campus da UFC em Quixadá, promovendo a educação ambiental, o engajamento da comunidade acadêmica e a eficiência da coleta seletiva por meio de uma plataforma digital
 
 ## :eyes: Público-Alvo
-Público-alvo do projeto
+Estudantes da UFC - Quixadá;
+Servidoresc (técnicos e docentes);
+Visitantes do campus
 
 ## :star2: Impacto Esperado
-Descreva o impacto esperado do projeto em relação ao público alvo
+O proejto visa fortalecer a cultura de sustentabilidade dentro da universidade, incentivando práticas corretas de descarte de resíduos. Espera-se aumentar o engajamento da comunidade acadêmica, otimizar a coleta seletiva e fornecer dados relevantes para apoiar decisões administrativas relacionadas à gestão ambiental. 
 
 ## :people_holding_hands: Papéis ou tipos de usuário da aplicação
+A aplicação contará com três tipos de usuários:
 
-Informe aqui os tipos de usuário que irão interagir com a aplicação. Ex: administrador, locador, locatario, usuário não logado.
+**Usuário não autenticado (público)**
+* Visualizar mapa de pontos de coleta
+* Acessar conteúdos educativos sobre reciclagem
 
-> Tenha em mente que obrigatoriamente a aplicação deve possuir funcionalidades acessíveis a todos os tipos de usuário e outra funcionalidades restritas a certos tipos de usuários.
+**Usuário autenticado (estudante/servidor)**
+* Registrar descartes de resíduos
+* Acompanhar histórico de participação
+* Interagir com conteúdos da plataforma
+
+**Administrador**
+* Gerenciar usuários
+* Gerenciar pontos de coleta
+* Visualizar relatórios e dados em tempo real
+* Monitorar volume e frequência de resíduos
 
 ## :triangular_flag_on_post:	 Principais funcionalidades da aplicação
+**Funcionalidades públicas**
+* Visualização de pontos de coleta em mapa interativo
+* Guias educativos sobre descarte correto
+* Informações sobre reciclagem
 
-Descreva ou liste brevemente as principais funcionalidades da aplicação que será desenvolvida. Destaque a funcionalidades que serão acessíveis a todos os usuários e aquelas restritas a usuários logados.
+**Funcionalidades autenticadas**
+* Cadastro e login de usuários
+* Registro de descarte de resíduos
+* Histórico de participação do usuário
+
+**Funcionalidades administrativas**
+* Painel com dados em tempo real
+* Relatórios de coleta
+* Gerenciamento de usuários e pontos de coleta
 
 ## :spiral_calendar: Entidades ou tabelas do sistema
-
-Liste as principais entidades do sistema.
-
+O sistema será composto pelas seguintes entidades:
+* Usuário
+* Ponto de Coleta
+* Resíduo
+* Descarte (dependente de Usuário e Resíduo)
+* Relatório
 
 ----
 

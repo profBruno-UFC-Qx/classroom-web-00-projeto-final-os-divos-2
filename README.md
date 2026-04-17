@@ -2,63 +2,83 @@
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=23519976)
 # :checkered_flag: NOME DO PROJETO
 
-**Recicla UFC**
-Plataforma web responsiva projetada como um ecossistema digital integrado para a otimização da gestão de resíduos sólidos e fomento da sustentabilidade no campus.
+**Recicla Quixadá**
+Plataforma web responsiva projetada como um ecossistema digital colaborativo para a otimização da gestão de resíduos sólidos, promovendo sustentabilidade, inclusão social e educação ambiental na comunidade de Quixadá.
 
 ## :technologist: Membros da equipe
 - Fábio Rodrigues Borges Filho - 552274 - EC
 - Ruanne Sousa Oliveira - 558314 - RC
 
 ## :bulb: Objetivo Geral
-Aplicação WEB com foco em extensão universitária para melhorar a gestão de resíduos sólidos no campus da UFC em Quixadá, promovendo a educação ambiental, o engajamento da comunidade acadêmica e a eficiência da coleta seletiva por meio de uma plataforma digital.
+Desenvolver uma aplicação web com foco em extensão universitária voltada à comunidade de Quixadá, com o objetivo de melhorar a gestão de resíduos sólidos por meio da conexão entre cidadãos, catadores e pontos de coleta, promovendo educação ambiental e engajamento social.
 
 ## :eyes: Público-Alvo
-- Estudantes da UFC - Quixadá
-- Servidores (técnicos e docentes)
-- Visitantes do campus
+- Moradores de Quixadá
+- Catadores e cooperativas de reciclagem
+- Pequenos comércios locais
+- Escolas públicas e privadas
+- Estudantes e servidores da UFC (como participantes e apoiadores)
 
 ## :star2: Impacto Esperado
-O projeto visa fortalecer a cultura de sustentabilidade dentro da universidade, incentivando práticas corretas de descarte de resíduos. Espera-se aumentar o engajamento da comunidade acadêmica, otimizar a coleta seletiva e fornecer dados relevantes para apoiar decisões administrativas relacionadas à gestão ambiental. 
+O projeto visa fortalecer a cultura de sustentabilidade na comunidade, incentivando práticas corretas de descarte de resíduos e promovendo a inclusão de catadores no processo de coleta. Espera-se aumentar o engajamento da população e simplificar a comunicação para o recolhimento de materiais recicláveis.
 
 ## :people_holding_hands: Papéis ou tipos de usuário da aplicação
-A aplicação contará com três tipos de usuários:
+A aplicação contará com quatro tipos de usuários:
 
 **Usuário não autenticado (público)**
 * Visualizar mapa de pontos de coleta
 * Acessar conteúdos educativos sobre reciclagem
+* Consultar informações sobre descarte correto
 
-**Usuário autenticado (estudante/servidor)**
+**Usuário autenticado (comunidade)**
+* Cadastro e login na plataforma
 * Registrar descartes de resíduos
+* Solicitar coleta de materiais recicláveis
 * Acompanhar histórico de participação
 * Interagir com conteúdos da plataforma
+
+**Catador/coletor**
+* Visualizar solicitações de coleta próximas
+* Aceitar e gerenciar coletas
+* Registrar materiais coletados
+* Acompanhar histórico de coletas realizadas
 
 **Administrador**
 * Gerenciar usuários
 * Gerenciar pontos de coleta
-* Visualizar relatórios e dados em tempo real
+* Visualizar relatórios
 * Monitorar volume e frequência de resíduos
 
 ## :triangular_flag_on_post:	 Principais funcionalidades da aplicação
 **Funcionalidades públicas**
-* Visualização de pontos de coleta em mapa interativo
+* Visualização de pontos de coleta 
 * Guias educativos sobre descarte correto
-* Informações sobre reciclagem
+* Informações sobre reciclagem e sustentabilidade
 
 **Funcionalidades autenticadas**
 * Cadastro e login de usuários
 * Registro de descarte de resíduos
 * Histórico de participação do usuário
+* Solicitação de coleta domiciliar
+
+**Funcionalidades para catadores**
+* Acesso a solicitações de coleta
+* Gerenciamento de coletas realizadas
+* Registro de materiais coletados
 
 **Funcionalidades administrativas**
 * Painel com dados em tempo real
 * Relatórios de coleta
 * Gerenciamento de usuários e pontos de coleta
+* Monitoramento de indicadores ambientais
 
 ## :spiral_calendar: Entidades ou tabelas do sistema
 O sistema será composto pelas seguintes entidades:
 * Usuário
+* Catador
 * Ponto de Coleta
 * Resíduo
+* Solicitação de coleta
 * Descarte (dependente de Usuário e Resíduo)
 * Relatório
 

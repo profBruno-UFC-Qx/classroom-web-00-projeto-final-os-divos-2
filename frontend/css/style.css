@@ -1,3 +1,4 @@
+/* Estilos globais */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body {
     color: #1f2937;
 }
 
+/* Menu lateral */
 .sidebar {
     width: 260px;
     height: 100vh;
@@ -95,6 +97,7 @@ body {
     font-size: 14px;
 }
 
+/* Barra superior */
 .main-content {
     margin-left: 260px;
     padding: 28px;
@@ -149,4 +152,75 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Banner principal */
+.hero {
+    min-height: 260px;
+    background: linear-gradient(90deg, #eaf7ed, #dff5e6);
+    border-radius: 18px;
+    padding: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 44px;
+    color: #064e3b;
+    margin-bottom: 18px;
+}
+
+.hero h2 span {
+    color: #16823a;
+}
+
+.hero p {
+    max-width: 520px;
+    color: #4b5563;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.hero-buttons {
+    margin-top: 26px;
+    display: flex;
+    gap: 14px;
+}
+
+.btn-primary,
+.btn-secondary {
+    text-decoration: none;
+    padding: 13px 20px;
+    border-radius: 9px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-primary {
+    background-color: #16823a;
+    color: white;
+}   
+
+.btn-secondary {
+    background-color: white;
+    border: 1px solid #16823a;
+    color: #16823a;
+}
+
+.hero-icon {
+    width: 230px; 
+    height: 230px;    
+    border-radius: 50%;   
+    background-color: rgba(2  55, 255, 255, 0.45);
+    display: flex;    
+    align-items: center;  
+    justify-content: center;  
+}
+
+.hero-icon i {
+    font-size: 120px;
+    color: #16823a;
 }

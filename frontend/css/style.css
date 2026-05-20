@@ -944,3 +944,64 @@ body {
 .check-list input {
     accent-color: #16823a;
 }
+
+/* Solicitação de coleta e catadores próximos */
+.request-card {
+    background: linear-gradient(90deg, #eaf7ed, #dff5e6);
+    border: 1px solid #ccefd4;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.request-card h3 {
+    color: #16823a;
+    margin-bottom: 10px;
+}
+
+.request-card p {
+    color: #374151;
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+.trash-icon {
+    font-size: 82px;
+    color: #16823a;
+}
+
+.collector {
+    display: grid;
+    grid-template-columns: 48px 1fr 40px;
+    gap: 14px;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.collector-avatar {
+    width: 48px;
+    height: 48px;
+    background: #eaf7ed;
+    color: #16823a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.collector h4 {
+    margin-bottom: 4px;
+}
+
+.collector p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.collector span {
+    color: #ca8a04;
+    font-weight: bold;
+}

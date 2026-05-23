@@ -1093,7 +1093,6 @@ body {
 }
 
 /* Formulário de solicitação */
-
 .request-form-card h3 {
     margin-bottom: 22px;
     color: #111827;
@@ -1147,4 +1146,56 @@ body {
     display: flex;
     gap: 14px;
     margin-top: 8px;
+}
+
+/* Informações da solicitação */
+.request-side {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.request-info-card h3 {
+    color: #16823a;
+    margin-bottom: 16px;
+}
+
+.request-info-card p {
+    color: #4b5563;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.request-info-card p i {
+    color: #16823a;
+    margin-right: 6px;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge {
+    background-color: #eaf7ed;
+    color: #16823a;
+    padding: 10px 14px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.schedule-item {
+    background-color: #f8faf8;
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    border-radius: 10px;
+    color: #4b5563;
 }

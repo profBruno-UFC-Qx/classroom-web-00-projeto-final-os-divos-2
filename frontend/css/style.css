@@ -1148,6 +1148,23 @@ body {
     margin-top: 8px;
 }
 
+.form-buttons .btn-primary,
+.form-buttons .btn-secondary {
+    transition: 0.2s ease;
+}
+
+.form-buttons .btn-primary:hover {
+    background-color: #0f6b2f;
+    transform: translateY(-1px);
+}
+
+.form-buttons .btn-secondary:hover {
+    background-color: #eaf7ed;
+    border-color: #16823a;
+    color: #16823a;
+    transform: translateY(-1px);
+}
+
 /* Informações da solicitação */
 .request-side {
     display: flex;

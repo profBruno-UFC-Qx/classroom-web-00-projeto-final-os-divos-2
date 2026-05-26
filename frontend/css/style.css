@@ -1013,6 +1013,17 @@ body {
     border: 1px solid #e5e7eb;
     overflow: hidden;
 }
+.search-map-button {
+    border: none;
+    background-color: transparent;
+    color: #1f2937;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.search-map-button:hover {
+    color: #16823a;
+}
 
 /* Responsividade da tela de pontos */
 @media (max-width: 1100px) {

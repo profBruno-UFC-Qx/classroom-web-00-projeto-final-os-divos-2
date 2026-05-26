@@ -75,8 +75,13 @@
 
     <section class="filters">
         <div class="search-box map-search">
-            <input type="text" placeholder="Buscar endereço ou bairro...">
-            <i class="bi bi-search"></i>
+            <input
+              type="text"
+              id="busca-mapa"
+              placeholder="Buscar endereço ou bairro...">  
+            <button type="button" id="btn-buscar-mapa" class="search-map-button">
+              <i class="bi bi-search"></i>
+            </button>
         </div>
 
         <button class="filter-button active-filter">
@@ -107,10 +112,7 @@
 
     <section class="map-layout">
         <div class="big-map-card">
-            <div class="map-tabs">
-                <button class="selected">Mapa</button>
-                <button>Satélite</button>
-            </div>
+        
       
             <div id="mapa-coleta" class="real-map"></div>
       

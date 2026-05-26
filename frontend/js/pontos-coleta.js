@@ -62,13 +62,30 @@ async function buscarLocalNoMapa() {
     return;
   }
 
-  const consulta = `${termo}, Quixadá, Ceará, Brasil`;
+let latitudeCentro = -4.9708;
+let longitudeCentro = -39.0154;
 
-  try {
-    const resposta = await fetch(
-      `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(consulta)}`
-    );
+if (termo.toLowerCase() === "centro") {
+  mapa.setView([latitudeCentro, longitudeCentro], 16);
 
+  if (marcadorBusca) {
+    mapa.removeLayer(marcadorBusca);
+  }
+
+  marcadorBusca = L.marker([latitudeCentro, longitudeCentro])
+    .addTo(mapa)
+    .bindPopup("<strong>Centro de Quixadá</strong>")
+    .openPopup();
+
+  return;
+}
+
+const consulta = `${termo}, Quixadá, Ceará, Brasil`;
+
+try {
+  const resposta = await fetch(
+    `https://nominatim.openstreetmap.org/search?format=json&limit=5&countrycodes=br&viewbox=-39.08,-4.92,-38.96,-5.03&bounded=1&q=${encodeURIComponent(consulta)}`
+  );
     const resultados = await resposta.json();
 
     if (resultados.length === 0) {

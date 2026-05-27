@@ -191,17 +191,34 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    transition: all 0.25s ease;
 }
 
 .btn-primary {
     background-color: #16823a;
     color: white;
-}   
+    border: 1px solid #16823a;
+}
+
+.btn-primary:hover {
+    background-color: #0f6b2f;
+    border-color: #0f6b2f;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(22, 130, 58, 0.25);
+}
 
 .btn-secondary {
     background-color: white;
     border: 1px solid #16823a;
     color: #16823a;
+}
+
+.btn-secondary:hover {
+    background-color: #ecfdf5;
+    color: #0f6b2f;
+    border-color: #0f6b2f;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(22, 130, 58, 0.15);
 }
 /*não tem mais icone, já que é imgagem
 .hero-icon {

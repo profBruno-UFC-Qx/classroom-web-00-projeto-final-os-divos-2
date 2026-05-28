@@ -12,80 +12,60 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
-<body>
+<body class="auth-page">
 
-  <main class="container">
+  <main class="cadastro-container">
 
-    <section class="left-side">
+    <section class="cadastro-left">
 
-      <div class="logo">
-  <img src="img/logoreciclaqxd.png" alt="Logo Recicla Quixadá">
-</div>
+  <div class="cadastro-logo">
+    <img src="img/logoreciclaqxd.png" alt="Logo Recicla Quixadá">
+  </div>
 
-      <div class="content-left">
+  <div class="cadastro-left-content">
+    <h1>
+      Descarte certo,<br>
+      <span>futuro melhor!</span>
+    </h1>
 
-        <h1>
-          Descarte certo,<br>
-          futuro melhor!
-        </h1>
+    <p>
+      Crie sua conta e faça parte de uma comunidade
+      que transforma Quixadá em uma cidade mais sustentável.
+    </p>
+  </div>
 
-        <p>
-          Crie sua conta e faça parte de uma comunidade
-          que transforma Quixadá em uma cidade mais sustentável.
-        </p>
-       <img
-  src="assets/imagem.png"
-  alt="Reciclagem"
-  class="illustration"
->
+  <div class="cadastro-info-cards">
+
+    <div class="cadastro-info-card">
+      <i class="bi bi-leaf"></i>
+      <h3>Impacte positivamente</h3>
+      <p>Suas ações ajudam a construir um futuro melhor para todos.</p>
+    </div>
+
+    <div class="cadastro-info-card">
+      <i class="bi bi-geo-alt"></i>
+      <h3>Conecte-se</h3>
+      <p>Encontre pontos de coleta e catadores próximos a você.</p>
+    </div>
+
+    <div class="cadastro-info-card">
+      <i class="bi bi-trophy"></i>
+      <h3>Seja reconhecido</h3>
+      <p>Acompanhe seu impacto sustentável na comunidade.</p>
+    </div>
+
+  </div>
+
+</section>
+
+    <section class="cadastro-right">
+
+      <div class="cadastro-login-link">
+        <span>Já tem uma conta?</span>
+        <a href="login.html">Entrar</a>
       </div>
-<div class="info-cards">
 
-  <div class="card">
-
-<h3>
-  <i class="bi bi-leaf"></i>
-  Impacte positivamente
-</h3>
-
-    <p>
-      Ajude o meio ambiente.
-    </p>
-
-  </div>
-
-  <div class="card">
-
-    <h3>
-    <i class="bi bi-geo-alt"></i>
-      Conecte-se
-    </h3>
-
-    <p>
-      Encontre pontos de coleta.
-    </p>
-
-  </div>
-
-  <div class="card">
-
-    <h3>
-    <i class="bi bi-trophy"></i>
-      Seja reconhecido
-    </h3>
-
-    <p>
-      Ganhe pontos e recompensas.
-    </p>
-
-  </div>
-
-</div>
-    </section>
-
-    <section class="right-side">
-
-      <div class="form-container">
+      <div class="cadastro-form-container">
 
         <h2>Criar conta</h2>
 
@@ -95,105 +75,99 @@
 
         <form>
 
-       <div class="user-types">
+          <label class="tipo-usuario-label">Tipo de usuário</label>
 
-              <button type="button">
-                Cidadão
-              </button>
-            
-              <button type="button">
-                Catador/Coletor
-              </button>
+          <div class="user-types">
 
-            <button type="button">
-              Comércio/Escola
+            <button type="button" class="active">
+              <i class="bi bi-person"></i>
+              <div>
+                <strong>Cidadão</strong>
+                <span>Pessoa da comunidade</span>
+              </div>
             </button>
 
+            <button type="button">
+              <i class="bi bi-person-workspace"></i>
+              <div>
+                <strong>Catador/Coletor</strong>
+                <span>Profissional da coleta</span>
+              </div>
+            </button>
+
+            <button type="button">
+              <i class="bi bi-building"></i>
+              <div>
+                <strong>Comércio/Escola</strong>
+                <span>Instituição ou empresa</span>
+              </div>
+            </button>
+
+          </div>
+
+          <div class="cadastro-form-grid">
+
+            <div class="form-group">
+              <label>Nome completo</label>
+              <input type="text" placeholder="Digite seu nome completo">
             </div>
-         
 
-          <div class="form-group">
-            <label>Nome completo</label>
+            <div class="form-group">
+              <label>E-mail</label>
+              <input type="email" placeholder="seu@email.com">
+            </div>
 
-            <input
-              type="text"
-              placeholder="Digite seu nome completo"
-            >
+            <div class="form-group">
+              <label>CPF</label>
+              <input type="text" placeholder="000.000.000-00">
+            </div>
+
+            <div class="form-group">
+              <label>Telefone</label>
+              <input type="text" placeholder="(88) 99999-9999">
+            </div>
+
+            <div class="form-group">
+              <label>Senha</label>
+              <input type="password" placeholder="Crie uma senha">
+            </div>
+
+            <div class="form-group">
+              <label>Confirmar senha</label>
+              <input type="password" placeholder="Confirme sua senha">
+            </div>
+
+            <div class="form-group full">
+              <label>Endereço</label>
+              <input type="text" placeholder="Rua, número, bairro, cidade - CE">
+            </div>
+
           </div>
 
-          <div class="form-group">
-            <label>E-mail</label>
-
-            <input
-              type="email"
-              placeholder="seu@email.com"
-            >
+          <div class="checkbox-group">
+            <input type="checkbox" id="termos">
+            <label for="termos">
+              Li e aceito os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a>
+            </label>
           </div>
 
-          <div class="form-group">
-            <label>CPF</label>
+          <button type="submit" class="cadastro-submit">
+            <i class="bi bi-person-plus"></i>
+            Cadastrar
+          </button>
 
-            <input
-              type="text"
-              placeholder="000.000.000-00"
-            >
+          <div class="divider">
+            <span>ou</span>
           </div>
 
-          <div class="form-group">
-  <label>Senha</label>
+          <button type="button" class="google-button">
+            <i class="bi bi-google"></i>
+            Cadastrar com Google
+          </button>
 
-  <input
-    type="password"
-    placeholder="Crie uma senha"
-  >
-</div>
+        </form>
 
-<div class="form-group">
-  <label>Telefone</label>
-
-  <input
-    type="text"
-    placeholder="(88) 99999-9999"
-  >
-</div>
-
-<div class="form-group">
-  <label>Endereço</label>
-
-  <input
-    type="text"
-    placeholder="Digite seu endereço"
-  >
-</div>
-
-<div class="form-group">
-  <label>Confirmar senha</label>
-
-  <input
-    type="password"
-    placeholder="Confirme sua senha"
-  >
-</div>
-
-<div class="checkbox-group">
-  <input type="checkbox">
-
-  <p>
-    Li e aceito os termos de uso
-  </p>
-</div>
-
-<button type="submit">
-  Cadastrar
-</button>
-
-<button type="button" class="google-button">
-  <i class="bi bi-google"></i>
-  Cadastrar com Google
-</button>
-
-</form>
-          </div>
+      </div>
 
     </section>
 

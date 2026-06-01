@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Coleta</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+       <div class="logo">
+  <img src="img/logoreciclaqxd.png" alt="Logo Recicla Quixadá">
+</div>
+
+        <nav class="menu">
+            <a href="dashboard.html">
+                <i class="bi bi-house-door"></i>
+                Início
+            </a>
+      
+            <a href="pontos-coleta.html">
+                <i class="bi bi-geo-alt"></i>
+                Pontos de Coleta
+            </a>
+      
+            <a href="solicita-coleta.html" class="active">
+                <i class="bi bi-truck"></i>
+                Solicitar Coleta
+            </a>
+      
+            <a href="meus-descartes.html">
+                <i class="bi bi-recycle"></i>
+                Meus Descartes
+            </a>
+      
+            <a href="educacao.html">
+                <i class="bi bi-book"></i>
+                Educação Ambiental
+            </a>
+      
+            <a href="perfil.html">
+                <i class="bi bi-person"></i>
+                Perfil
+            </a>
+      
+            <a href="login.html">
+                <i class="bi bi-box-arrow-right"></i>
+                Sair
+            </a>
+        </nav>
+
+        <div class="sidebar-card">
+            <i class="bi bi-globe-americas"></i>
+            <h3>Pequenas atitudes, grandes mudanças!</h3>
+            <p>Faça sua parte por uma Quixadá mais sustentável.</p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <section class="request-hero">
+        <div>
+            <h2>Solicite sua coleta<br><span>com facilidade</span> </h2>
+            <p>
+              Agende a retirada dos seus materiais recicláveis em poucos passos
+              e contribua para uma Quixadá mais limpa e sustentável.
+            </p>
+        </div>
+
+        <div class="request-hero-image">
+            <img src="img/coleta-banner.png" alt="Ilustração de coleta seletiva domiciliar">
+        </div>
+
+        </section>
+
+        <section class="request-grid">
+            <div class="panel request-form-card">
+                <h3>Dados da Coleta</h3>
+
+                <form id="form-solicitacao" class="request-form">
+                    <div class="form-group">
+                        <label for="material">Tipo de Material</label>
+                        <select id="material">
+                              <option>Selecione</option>
+                              <option>Plástico</option>
+                              <option>Papel</option>
+                              <option>Vidro</option>
+                              <option>Metal</option>
+                              <option>Eletrônicos</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="quantidade">Quantidade Estimada</label>
+                        <select id="quantidade">
+                          <option>Pequena</option>
+                          <option>Média</option>
+                          <option>Grande</option>
+                        </select>
+                    </div>
+                
+                 
+                <div class="form-group">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" placeholder="Digite seu endereço">
+                </div>
+                
+                 <div class="form-group">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" placeholder="Digite seu bairro">
+                  </div>
+                
+                 <div class="form-row">
+                    <div class="form-group">
+                      <label for="data">Data da Coleta</label>
+                      <input type="date" id="data">
+                    </div>
+                  
+                   <div class="form-group">
+                      <label for="horario">Horário Preferido</label>
+                      <input type="time" id="horario">
+                    </div>
+                  </div>
+                
+                 <div class="form-group">
+                    <label for="observacoes">Observações</label>
+                    <textarea id="observacoes" placeholder="Informações adicionais..."></textarea>
+                  </div>
+                
+                 <div class="form-buttons">
+                    <button type="button" id="btn-cancelar" class="btn-secondary">Cancelar</button>
+                    <button type="submit" class="btn-primary">
+                      <i class="bi bi-truck"></i>
+                      Solicitar Coleta
+                    </button>
+                  </div>
+                </form>
+            </div>
+            <aside class="request-side">
+                <div class="panel request-info-card">
+                    <h3>Informações</h3>                   
+                    <p><i class="bi bi-check-circle"></i> Coletas de segunda a sexta</p>
+                    <p><i class="bi bi-clock"></i> 08:00 às 17:00</p>
+                    <p><i class="bi bi-truck"></i> Confirmação em até 24h</p>
+                </div>
+            
+                <div class="panel request-info-card">
+                    <h3>Materiais Aceitos</h3>
+                    
+                    <div class="badges">
+                        <span class="badge">Plástico</span>
+                        <span class="badge">Papel</span>
+                        <span class="badge">Vidro</span>
+                        <span class="badge">Metal</span>
+                        <span class="badge">Eletrônicos</span>
+                    </div>
+                </div>
+            
+                <div class="panel request-info-card">
+                    <h3>Próximas Coletas</h3>
+                
+                    <div class="schedule">
+                        <div class="schedule-item">20 Abr - Coleta Seletiva</div>
+                        <div class="schedule-item">25 Abr - Papelão</div>
+                        <div class="schedule-item">02 Mai - Eletrônicos</div>
+                    </div>
+                </div>
+
+            </aside>
+        </section>
+           
+    <footer class="footer">
+  <div class="footer-top">
+   <div class="footer-brand">
+  <div class="footer-logo">
+    <img src="img/logoreciclaqxd.png" alt="Logo Recicla Quixadá">
+  </div>
+
+  <p class="footer-description">
+    Plataforma colaborativa para gestão de resíduos sólidos, conectando
+    cidadãos, catadores e pontos de coleta para promover sustentabilidade,
+    educação ambiental e descarte correto em Quixadá.
+  </p>
+</div>
+    <div class="footer-column">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="dashboard.html">Início</a></li>
+        <li><a href="pontos-coleta.html">Pontos de Coleta</a></li>
+        <li><a href="solicita-coleta.html">Solicitar Coleta</a></li>
+        <li><a href="educacao.html">Educação Ambiental</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contato</h4>
+      <ul class="footer-contact">
+        <li>
+          <i class="bi bi-geo-alt"></i>
+          Rua Exemplo da Sustentabilidade, 123 - Centro, Quixadá - CE
+        </li>
+        <li>
+          <i class="bi bi-telephone"></i>
+          (88) 99999-9999
+        </li>
+        <li>
+          <i class="bi bi-envelope"></i>
+          contato@reciclaquixada.com
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Recicla Quixadá. Todos os direitos reservados.</p>
+    <p>Desenvolvido para promoção da sustentabilidade e educação ambiental.</p>
+  </div>
+</footer>
+    </main>
+<script src="js/solicita-coleta.js"></script>
+</body>
+</html>

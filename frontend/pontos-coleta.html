@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recicla Quixadá - Pontos de Coleta</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">
+  <img src="img/logoreciclaqxd.png" alt="Logo Recicla Quixadá">
+</div>
+
+        <nav class="menu">
+        <a href="dashboard.html" class="active">
+            <i class="bi bi-house-door"></i>
+            Início
+        </a>    
+        <a href="pontos-coleta.html">
+            <i class="bi bi-geo-alt"></i>
+            Pontos de Coleta
+        </a>    
+        <a href="solicita-coleta.html">
+            <i class="bi bi-truck"></i>
+            Solicitar Coleta
+        </a>    
+        <a href="meus-descartes.html">
+            <i class="bi bi-recycle"></i>
+            Meus Descartes
+        </a>    
+        <a href="educacao.html">
+            <i class="bi bi-book"></i>
+            Educação Ambiental
+        </a>    
+        <a href="perfil.html">
+            <i class="bi bi-person"></i>
+            Perfil
+        </a>
+        <a href="login.html">
+            <i class="bi bi-box-arrow-right"></i>
+            Sair
+        </a>
+    </nav>
+
+    <div class="sidebar-card">
+        <i class="bi bi-globe-americas"></i>
+        <h3>Pequenas atitudes, grandes mudanças!</h3>
+        <p>Faça sua parte por uma Quixadá mais sustentável.</p>
+    </div>
+    </aside>
+
+    <main class="main-content">
+
+    <header class="page-header">
+        <div>
+            <h2>Mapa de Pontos de Coleta</h2>
+            <p>Encontre pontos de coleta e catadores próximos de você.</p>
+        </div>   
+       <div class="user-info">
+  <button class="top-icon" type="button" title="Notificações">
+    <i class="bi bi-bell"></i>
+    <span class="notification-dot"></span>
+  </button>
+
+  <div class="user-profile">
+    <div class="avatar">
+      <i class="bi bi-person-fill"></i>
+    </div>
+    <span>Olá, Bruno!</span>
+    <i class="bi bi-chevron-down"></i>
+  </div>
+</div>
+    </header>
+
+    <section class="filters">
+        <div class="search-box map-search">
+            <input
+              type="text"
+              id="busca-mapa"
+              placeholder="Buscar endereço ou bairro...">  
+            <button type="button" id="btn-buscar-mapa" class="search-map-button">
+              <i class="bi bi-search"></i>
+            </button>
+        </div>
+        <button type="button" id="btn-minha-localizacao" class="filter-button">
+            <i class="bi bi-crosshair"></i>
+            Minha localização
+        </button>
+        <button class="filter-button active-filter">
+            <i class="bi bi-funnel"></i>
+            Todos os tipos
+        </button>
+
+        <button class="filter-button">
+            <i class="bi bi-bag-fill plastic"></i>
+            Plástico
+        </button>
+
+        <button class="filter-button">
+            <i class="bi bi-bottle plastic-green"></i>
+            Vidro
+        </button>
+
+        <button class="filter-button">
+            <i class="bi bi-file-earmark-text paper"></i>
+            Papel
+        </button>
+
+        <button class="filter-button">
+            <i class="bi bi-eyedropper metal"></i>
+            Metal
+        </button>
+    </section>
+
+    <section class="map-layout">
+        <div class="big-map-card">
+        
+      
+            <div id="mapa-coleta" class="real-map"></div>
+      
+            <div class="map-tip">
+                <i class="bi bi-info-circle"></i>
+                <span>Dica: Clique em um ponto no mapa para ver mais informações ou solicitar coleta.</span>
+            </div>
+        </div>
+
+        <aside class="map-side">
+            <div class="panel">
+                <h3>Filtrar por tipo de resíduo</h3>
+                <p class="muted">Selecione o tipo de material que deseja descartar</p>
+
+                <div class="check-list">
+                    <label><input type="checkbox" checked> Plástico</label>
+                    <label><input type="checkbox" checked> Vidro</label>
+                    <label><input type="checkbox" checked> Papel</label>
+                    <label><input type="checkbox" checked> Metal</label>
+                    <label><input type="checkbox" checked> Orgânico</label>
+                </div>
+            </div>
+            <div class="request-card">
+                <div>
+                    <h3>Solicitar coleta aqui</h3>
+                    <p>Precisando descartar materiais recicláveis? Solicite a coleta e um catador próximo entrará em contato!</p>
+
+                    <a href="solicita-coleta.html" class="btn-primary">
+                        <i class="bi bi-truck"></i>
+                        Solicitar coleta
+                    </a>
+                </div>
+
+                <i class="bi bi-trash3-fill trash-icon"></i>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header">
+                    <h3>Catadores próximos</h3>
+                    <a href="#">Ver todos</a>
+                </div>
+            
+                <div class="collector">
+                    <div class="collector-avatar">J</div>
+                    <div>
+                        <h4>João Batista</h4>
+                        <p><i class="bi bi-geo-alt"></i> 2,1 km de distância</p>
+                    </div>
+                    <span>4,8</span>
+                </div>
+            
+                <div class="collector">
+                    <div class="collector-avatar">M</div>
+                    <div>
+                        <h4>Maria do Carmo</h4>
+                        <p><i class="bi bi-geo-alt"></i> 2,4 km de distância</p>
+                    </div>
+                    <span>4,9</span>
+                </div>
+            
+                <div class="collector">
+                    <div class="collector-avatar">C</div>
+                    <div>
+                        <h4>Cooperativa Esperança</h4>
+                        <p><i class="bi bi-geo-alt"></i> 3,1 km de distância</p>
+                    </div>
+                    <span>4,7</span>
+                </div>
+            </div>
+        </aside>
+    </section>
+        
+    <footer class="footer">
+  <div class="footer-top">
+  <div class="footer-brand">
+  <div class="footer-logo">
+    <img src="img/logoreciclaqxd.png" alt="Logo Recicla Quixadá">
+  </div>
+
+  <p class="footer-description">
+    Plataforma colaborativa para gestão de resíduos sólidos, conectando
+    cidadãos, catadores e pontos de coleta para promover sustentabilidade,
+    educação ambiental e descarte correto em Quixadá.
+  </p>
+</div>
+
+    <div class="footer-column">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="dashboard.html">Início</a></li>
+        <li><a href="pontos-coleta.html">Pontos de Coleta</a></li>
+        <li><a href="solicita-coleta.html">Solicitar Coleta</a></li>
+        <li><a href="educacao.html">Educação Ambiental</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contato</h4>
+      <ul class="footer-contact">
+        <li>
+          <i class="bi bi-geo-alt"></i>
+          Rua Exemplo da Sustentabilidade, 123 - Centro, Quixadá - CE
+        </li>
+        <li>
+          <i class="bi bi-telephone"></i>
+          (88) 99999-9999
+        </li>
+        <li>
+          <i class="bi bi-envelope"></i>
+          contato@reciclaquixada.com
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Recicla Quixadá. Todos os direitos reservados.</p>
+    <p>Desenvolvido para promoção da sustentabilidade e educação ambiental.</p>
+  </div>
+</footer>   
+    </main>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="js/pontos-coleta.js"></script>
+</body>
+</html>

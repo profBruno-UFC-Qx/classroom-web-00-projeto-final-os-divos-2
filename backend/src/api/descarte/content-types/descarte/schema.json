@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "descartes",
+  "info": {
+    "singularName": "descarte",
+    "pluralName": "descartes",
+    "displayName": "Descarte"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tipo_material": {
+      "type": "string"
+    },
+    "quantidade": {
+      "type": "decimal"
+    },
+    "unidade": {
+      "type": "enumeration",
+      "enum": [
+        "kg",
+        "unidade",
+        "sacola",
+        "caixa"
+      ]
+    },
+    "data_descarte": {
+      "type": "date"
+    },
+    "local_descarte": {
+      "type": "string"
+    },
+    "observacoes": {
+      "type": "text"
+    }
+  }
+}

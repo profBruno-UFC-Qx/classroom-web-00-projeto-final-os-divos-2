@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recicla Quixadá - Perfil</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="logo">
+  <img src="img/logoreciclaqxd.png" alt="Logo Recicla Quixadá">
+</div>
+
+    <nav class="menu">
+      <a href="dashboard.html">
+        <i class="bi bi-house-door"></i>
+        Início
+      </a>
+
+      <a href="pontos-coleta.html">
+        <i class="bi bi-geo-alt"></i>
+        Pontos de Coleta
+      </a>
+
+      <a href="solicita-coleta.html">
+        <i class="bi bi-truck"></i>
+        Solicitar Coleta
+      </a>
+
+      <a href="meus-descartes.html">
+        <i class="bi bi-recycle"></i>
+        Meus Descartes
+      </a>
+
+      <a href="educacao.html">
+        <i class="bi bi-book"></i>
+        Educação Ambiental
+      </a>
+
+      <a href="perfil.html" class="active">
+        <i class="bi bi-person"></i>
+        Perfil
+      </a>
+
+      <a href="login.html">
+        <i class="bi bi-box-arrow-right"></i>
+        Sair
+      </a>
+    </nav>
+
+    <div class="sidebar-card">
+      <i class="bi bi-globe-americas"></i>
+      <h3>Pequenas atitudes, grandes mudanças!</h3>
+      <p>Faça sua parte por uma Quixadá mais sustentável.</p>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <header class="page-header">
+      <div>
+        <h2>Perfil do Usuário</h2>
+        <p>Visualize suas informações pessoais e acompanhe sua participação na plataforma.</p>
+      </div>
+
+      <div class="user-info">
+        <i class="bi bi-bell"></i>
+        <div class="avatar">
+          <i class="bi bi-person-fill"></i>
+        </div>
+        <span id="perfil-saudacao">Olá!</span>
+      </div>
+    </header>
+
+    <section class="content-grid">
+      <div class="panel">
+        <div class="panel-header">
+  <h3>Informações pessoais</h3>
+
+  <button type="button" class="btn-edit-profile" id="btn-editar-perfil">
+    <i class="bi bi-pencil-square"></i>
+    Editar perfil
+  </button>
+</div>
+
+        <div class="schedule">
+  <div class="schedule-item">
+    <strong>Nome:</strong>
+    <span id="perfil-nome">Carregando...</span>
+  </div>
+
+  <div class="schedule-item">
+    <strong>E-mail:</strong>
+    <span id="perfil-email">Carregando...</span>
+  </div>
+
+  <div class="schedule-item">
+    <strong>CPF:</strong>
+    <span id="perfil-cpf">Carregando...</span>
+  </div>
+
+  <div class="schedule-item">
+    <strong>Telefone:</strong>
+    <span id="perfil-telefone">Carregando...</span>
+  </div>
+
+  <div class="schedule-item">
+    <strong>Endereço:</strong>
+    <span id="perfil-endereco">Carregando...</span>
+  </div>
+
+  <div class="schedule-item">
+    <strong>Tipo de usuário:</strong>
+    <span id="perfil-tipo">Carregando...</span>
+  </div>
+</div>
+      </div>
+
+     <div class="panel profile-panel">
+  <h3>Resumo da participação</h3>
+
+  <div class="profile-summary">
+    <div class="profile-summary-avatar" id="perfil-inicial">?</div>
+
+    <div class="profile-summary-info">
+      <h4 id="perfil-nome-resumo">Carregando...</h4>
+
+      <p>
+        <i class="bi bi-recycle"></i>
+        <span id="perfil-resumo-status">Buscando seus registros...</span>
+      </p>
+    </div>
+
+    <div class="profile-points">
+      <strong id="perfil-pontos">--</strong>
+      <span>pontos</span>
+    </div>
+  </div>
+
+  <p class="muted" id="perfil-mensagem-participacao">
+    Carregando resumo da sua participação...
+  </p>
+
+  <a href="meus-descartes.html" class="btn-secondary profile-action" id="perfil-botao-acao">
+    <i class="bi bi-plus-circle"></i>
+    Registrar descarte
+  </a>
+</div>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+  <div class="card-icon green">
+    <i class="bi bi-recycle"></i>
+  </div>
+  <div>
+    <p>Descartes</p>
+    <h3 id="perfil-total-descartes">--</h3>
+    <span id="perfil-texto-descartes">buscando registros</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-icon blue">
+    <i class="bi bi-truck"></i>
+  </div>
+  <div>
+    <p>Coletas</p>
+    <h3 id="perfil-total-coletas">--</h3>
+    <span id="perfil-texto-coletas">buscando registros</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-icon purple">
+    <i class="bi bi-leaf"></i>
+  </div>
+  <div>
+    <p>Impacto</p>
+    <h3 id="perfil-impacto">--</h3>
+    <span id="perfil-texto-impacto">buscando impacto</span>
+  </div>
+</div>
+    </section>
+
+    <div class="profile-modal" id="profile-modal">
+  <div class="profile-modal-content">
+
+    <div class="profile-modal-header">
+      <h3>Editar perfil</h3>
+
+      <button type="button" class="profile-modal-close" id="btn-fechar-modal">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <form id="form-editar-perfil" class="profile-edit-form">
+
+      <div class="form-group">
+        <label>Nome completo</label>
+        <input type="text" id="editar-nome">
+      </div>
+
+      <div class="form-group">
+        <label>CPF</label>
+        <input type="text" id="editar-cpf" readonly class="input-readonly">
+        <small class="field-help">
+  O CPF não pode ser alterado pelo usuário.
+</small>
+      </div>
+
+      <div class="form-group">
+        <label>Telefone</label>
+        <input type="text" id="editar-telefone">
+      </div>
+
+      <div class="form-group full">
+        <label>Endereço</label>
+        <input type="text" id="editar-endereco">
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn-secondary" id="btn-cancelar-edicao">
+          Cancelar
+        </button>
+
+        <button type="submit" class="btn-primary">
+          <i class="bi bi-check-circle"></i>
+          Salvar alterações
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+    <footer class="footer">
+  <div class="footer-top">
+  <div class="footer-brand">
+  <div class="footer-logo">
+    <img src="img/logoreciclaqxd.png" alt="Logo Recicla Quixadá">
+  </div>
+
+  <p class="footer-description">
+    Plataforma colaborativa para gestão de resíduos sólidos, conectando
+    cidadãos, catadores e pontos de coleta para promover sustentabilidade,
+    educação ambiental e descarte correto em Quixadá.
+  </p>
+</div>
+
+    <div class="footer-column">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="dashboard.html">Início</a></li>
+        <li><a href="pontos-coleta.html">Pontos de Coleta</a></li>
+        <li><a href="solicita-coleta.html">Solicitar Coleta</a></li>
+        <li><a href="educacao.html">Educação Ambiental</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contato</h4>
+      <ul class="footer-contact">
+        <li>
+          <i class="bi bi-geo-alt"></i>
+          Rua Exemplo da Sustentabilidade, 123 - Centro, Quixadá - CE
+        </li>
+        <li>
+          <i class="bi bi-telephone"></i>
+          (88) 99999-9999
+        </li>
+        <li>
+          <i class="bi bi-envelope"></i>
+          contato@reciclaquixada.com
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Recicla Quixadá. Todos os direitos reservados.</p>
+    <p>Desenvolvido para promoção da sustentabilidade e educação ambiental.</p>
+  </div>
+</footer>
+  </main>
+<script src="js/perfil.js"></script>
+</body>
+</html>

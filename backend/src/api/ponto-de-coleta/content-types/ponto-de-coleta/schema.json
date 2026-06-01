@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ponto_de_coletas",
+  "info": {
+    "singularName": "ponto-de-coleta",
+    "pluralName": "ponto-de-coletas",
+    "displayName": "Ponto de Coleta"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "endereco": {
+      "type": "string"
+    },
+    "bairro": {
+      "type": "string"
+    },
+    "materiais_aceitos": {
+      "type": "text"
+    },
+    "horario_funcionamento": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "decimal"
+    },
+    "longitude": {
+      "type": "decimal"
+    },
+    "ativo": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catadors",
+  "info": {
+    "singularName": "catador",
+    "pluralName": "catadors",
+    "displayName": "Catador"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "bairro": {
+      "type": "string"
+    },
+    "area_atuacao": {
+      "type": "string"
+    },
+    "materiais_coletados": {
+      "type": "text"
+    },
+    "disponivel": {
+      "type": "boolean"
+    },
+    "avaliacao": {
+      "type": "decimal"
+    }
+  }
+}

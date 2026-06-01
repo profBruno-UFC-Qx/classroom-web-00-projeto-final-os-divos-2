@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "residuos",
+  "info": {
+    "singularName": "residuo",
+    "pluralName": "residuos",
+    "displayName": "Residuo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "reciclavel": {
+      "type": "boolean"
+    },
+    "orientacao_descarte": {
+      "type": "text"
+    }
+  }
+}

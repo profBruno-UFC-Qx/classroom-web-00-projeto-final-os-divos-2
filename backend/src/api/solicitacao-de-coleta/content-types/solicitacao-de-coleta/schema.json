@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solicitacao_de_coletas",
+  "info": {
+    "singularName": "solicitacao-de-coleta",
+    "pluralName": "solicitacao-de-coletas",
+    "displayName": "Solicitacao de Coleta"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tipo_material": {
+      "type": "string"
+    },
+    "quantidade": {
+      "type": "enumeration",
+      "enum": [
+        "pequena",
+        "media",
+        "grande"
+      ]
+    },
+    "endereco": {
+      "type": "string"
+    },
+    "bairro": {
+      "type": "string"
+    },
+    "data_coleta": {
+      "type": "date"
+    },
+    "horario_preferido": {
+      "type": "string"
+    },
+    "observacoes": {
+      "type": "text"
+    },
+    "situacao": {
+      "type": "enumeration",
+      "enum": [
+        "pendente",
+        "aceita",
+        "concluida",
+        "cancelada"
+      ]
+    }
+  }
+}
